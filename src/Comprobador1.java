@@ -46,7 +46,7 @@ public class Comprobador1 {
         int n;
 
         n = posiblepal.length();
-        System.out.println(posiblepal);
+
 
         if(n != 0){
 

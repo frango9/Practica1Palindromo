@@ -31,7 +31,7 @@ public class Comprobador2 {
         String posiblepal= frase.replaceAll(" ", "");
 
         n = posiblepal.length();
-        System.out.println(posiblepal);
+
 
         for (int i = 0; i < n ; i++) {
             pila1.apilar(posiblepal.charAt(i));
