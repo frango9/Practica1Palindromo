@@ -33,40 +33,23 @@ public class Comprobador3 {
 
         n = posiblepal.length();
 
-        if(n != 0){
-
-            for (int i = 0; i < n; i++){
-                pila1.push(posiblepal.charAt(i));
-            }
-
-            for (int i = 0; i < (n-1)/2; i++) {
-                pila2.push(pila1.pop());
-            }
-
-            pila1.pop();
-
-            while (z == 0 && j < (n-1) / 2) {
-                if (pila1.pop() != pila2.pop()) {
-                    z = 1;
-                    j++;
-                } else j++;
-            }
+        for (int i = 0; i < n; i++){
+            pila1.push(posiblepal.charAt(i));
         }
-        else {
-            for (int i = 0; i < n; i++) {
-                pila1.push(posiblepal.charAt(i));
-            }
 
-            for (int i = 0; i < n / 2; i++) {
-                pila2.push(pila1.pop());
-            }
-
-            while (z == 0 && j < n / 2) {
-                if (pila1.pop() != pila2.pop()) {
-                    z = 1;
-                } else j++;
-            }
+        for (int i = 0; i < n/2; i++) {
+            pila2.push(pila1.pop());
         }
+
+        if(pila1.size() != pila2.size()) pila1.pop();
+
+        while (z == 0 && j < n/ 2) {
+            if (pila1.pop() != pila2.pop()) {
+                z = 1;
+                j++;
+            } else j++;
+        }
+
         if (z == 0) System.out.println("Es palindromo.");
         else System.out.println("No es palindromo");
 
