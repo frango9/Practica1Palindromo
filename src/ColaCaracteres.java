@@ -20,9 +20,9 @@ public class ColaCaracteres {
         numElem++;
     }
 
-    public int desencolar() {    //Devuelve el elemento del cabeza de la cola y lo elimina Si la cola está vacía, devuelve como resultado 0 y un mensaje de error
+    public int desencolar() {    //Devuelve el elemento del cabeza de la cola y lo elimina Si la cola está vacía, devuelve como resultado @ y un mensaje de error
         NodoCaracteres nodo;
-        int resul = 0;
+        char resul = '@';
 
         if (cabeza == null)
             System.out.println("Error, la cola está vacía");
@@ -44,7 +44,7 @@ public class ColaCaracteres {
     }
 
 
-    public char primero() {  //Devuelve el elemento del cabeza de la cola Si la cola está vacía, devuelve como resultado -999 y un mensaje de error
+    public char primero() {  //Devuelve el elemento del cabeza de la cola Si la cola está vacía, devuelve como resultado @ y un mensaje de error
 
         char resul = '@';
 

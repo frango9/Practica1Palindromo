@@ -38,10 +38,10 @@ public class PilaCaracteres {
     }
 
     public char cima() {
-        int valor;
+        char valor;
         if (this.pilaVacia()) {
             System.out.println("Error, la pila está vacía");
-            valor = -9999;
+            valor = '@';
         } else {
             valor = cimaPila.getDato();
         }

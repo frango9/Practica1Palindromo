@@ -1,6 +1,6 @@
 public class NodoCaracteres {
 
-    private int dato;
+    private char dato;
     private NodoCaracteres siguiente;
 
     public NodoCaracteres(char dato, NodoCaracteres sig) {
@@ -13,14 +13,16 @@ public class NodoCaracteres {
     }
 
     public void setSiguiente(NodoCaracteres siguiente) {
+
         this.siguiente = siguiente;
     }
 
-    public int getDato() {
+    public char getDato() {
         return dato;
     }
 
     public void setDato(char dato) {
+
         this.dato = dato;
     }
 }
